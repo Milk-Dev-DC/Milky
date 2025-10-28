@@ -2,6 +2,11 @@
 
 Milky is a comprehensive CSS and UI component showcase that allows developers and designers to preview and test a wide variety of interface elements in one place. From buttons, tags, cards, and forms to progress bars, notifications, sliders, and more, Milky makes it easy to see how your components will look and behave in a real project.
 
+
+## Preview
+
+[Milky Live Demo](https://milk-dev-dc.github.io/Milky/)
+
 ## Features
 
 - **Tag Styles:** Beta, New, Limited, Pro, Disabled, and more.
