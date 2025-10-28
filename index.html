@@ -1,0 +1,352 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Milky — CSS Showcase</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <header class="hero">
+    <div class="wrap hero-inner">
+      <h1>Milky — CSS Showcase</h1>
+      <p class="tag">Preview all buttons, tags, code blocks and cards in one place.</p>
+    </div>
+  </header>
+
+  <main class="wrap">
+
+    <!-- Tags Showcase -->
+    <section id="tags">
+      <h2>Tag Styles</h2>
+      <p>Hover over tags to see tooltips:</p>
+      <div style="display:flex;flex-wrap:wrap;gap:8px;">
+        <span class="tag beta-tag" title="This feature is in Beta testing">BETA</span>
+        <span class="tag new-tag" title="This is a newly added feature">NEW</span>
+        <span class="tag limited-tag" title="Available for a limited time only">LIMITED TIME</span>
+        <span class="tag updated-tag" title="Recently updated feature">UPDATED</span>
+        <span class="tag alpha-tag" title="Alpha version - early testing">ALPHA</span>
+        <span class="tag dev-tag" title="For developers only">DEV ONLY</span>
+        <span class="tag exp-tag" title="Experimental feature - use with caution">EXPERIMENTAL</span>
+        <span class="tag pro-tag" title="Premium feature for paid users">PREMIUM</span>
+        <span class="tag warning-tag" title="Unstable or potentially problematic feature">UNSTABLE</span>
+        <span class="tag archive-tag" title="This feature is deprecated or archived">DEPRECATED</span>
+        <span class="tag disabled-tag" title="This feature is currently disabled">DISABLED</span>
+      </div>
+    </section>
+
+    <!-- Buttons Showcase -->
+    <section id="buttons">
+      <h2>Button Styles</h2>
+      <p>Primary, secondary, and other button types:</p>
+      <div style="display:flex;gap:12px;flex-wrap:wrap;">
+        <a href="#" class="btn primary">Primary</a>
+        <a href="#" class="btn secondary">Secondary</a>
+        <a href="#" class="btn success">Success</a>
+        <a href="#" class="btn danger">Danger</a>
+        <a href="#" class="btn warning">Warning</a>
+        <a href="#" class="btn info">Info</a>
+        <a href="#" class="btn link">Link</a>
+        <a href="#" class="btn disabled">Disabled</a>
+        <a href="#" class="btn">Default</a>
+      </div>
+    </section>
+
+    <!-- Cards Showcase -->
+    <section id="cards">
+      <h2>Cards</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Card 1</h3>
+          <p>This is a card with some content.</p>
+        </div>
+        <div class="card">
+          <h3>Card 2</h3>
+          <p>Another example card for preview.</p>
+        </div>
+        <div class="card">
+          <h3>Card 3</h3>
+          <p>Cards are styled with subtle backgrounds and border-radius.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Code Blocks Showcase -->
+    <section id="code">
+      <h2>Code Blocks</h2>
+      <pre class="code">
+/mute @user reason: Spamming
+/role add @user @Role reason: Welcome
+      </pre>
+    </section>
+
+    <!-- FAQ / Collapsible Section -->
+    <section id="faq">
+      <h2>FAQ Example</h2>
+      <div class="faq-item">
+        <div class="faq-q">What is MilkBot?</div>
+        <div class="faq-a">MilkBot is a moderation and utility bot for Discord servers.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">How do I use commands?</div>
+        <div class="faq-a">Type a slash command (/) and follow the interactive prompts in your server.</div>
+      </div>
+    </section>
+
+    <!-- Hero Steps Example -->
+    <section id="steps">
+      <h2>Steps / Flow</h2>
+      <div class="hero-steps">
+        <div class="step"><strong>1</strong> Setup Server</div>
+        <div class="step"><strong>2</strong> Assign Roles</div>
+        <div class="step"><strong>3</strong> Configure Badges</div>
+        <div class="step"><strong>4</strong> Monitor Logs</div>
+      </div>
+    </section>
+
+    <!-- Alerts / Notifications -->
+    <section id="alerts">
+      <h2>Notifications / Alerts</h2>
+      <div style="display:flex;flex-direction:column;gap:8px;">
+        <div class="tag beta-tag" style="display:block;">Info: This is a beta alert</div>
+        <div class="tag new-tag" style="display:block;">Success: New feature activated</div>
+        <div class="tag warning-tag" style="display:block;">Warning: Unstable feature</div>
+        <div class="tag limited-tag" style="display:block;">Limited: Time-sensitive alert</div>
+        <div class="tag disabled-tag" style="display:block;">Error: Disabled feature</div>
+      </div>
+    </section>
+
+    <!-- Toggles -->
+    <section id="toggles">
+      <h2>Toggles / Switches</h2>
+      <label class="switch">
+        <input type="checkbox" checked>
+        <span class="slider"></span>
+        Enable Notifications
+      </label>
+      <label class="switch">
+        <input type="checkbox">
+        <span class="slider"></span>
+        Enable Experimental Features
+      </label>
+    </section>
+
+    <!-- Progress Bars -->
+    <section id="progress">
+      <h2>Progress Bars</h2>
+      <div style="margin-bottom:6px;">Server Setup Progress</div>
+      <div class="progress-bar">
+        <div class="progress" id="serverProgress" style="width:65%"></div>
+      </div>
+
+      <label for="progressRange" style="margin-top:8px; display:block;">
+        Adjust Progress: <span id="progressValue">65</span>%
+      </label>
+      <input type="range" id="progressRange" min="0" max="100" value="65">
+    </section>
+
+    <!-- Tables -->
+    <section id="tables">
+      <h2>Tables</h2>
+      <table style="width:100%;border-collapse:collapse;">
+        <thead>
+          <tr>
+            <th style="text-align:left;padding:8px;">Role</th>
+            <th style="text-align:left;padding:8px;">Access Level</th>
+            <th style="text-align:left;padding:8px;">Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="padding:8px;">Admin</td>
+            <td style="padding:8px;">Full</td>
+            <td style="padding:8px;"><span class="tag pro-tag">Active</span></td>
+          </tr>
+          <tr>
+            <td style="padding:8px;">Moderator</td>
+            <td style="padding:8px;">Partial</td>
+            <td style="padding:8px;"><span class="tag beta-tag">Beta</span></td>
+          </tr>
+          <tr>
+            <td style="padding:8px;">Member</td>
+            <td style="padding:8px;">Limited</td>
+            <td style="padding:8px;"><span class="tag new-tag">New</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Modal / Popup -->
+    <section id="modal-demo">
+      <h2>Modal / Popup</h2>
+      <button class="btn primary" id="openModal">Open Modal</button>
+      <div id="modal" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.6);align-items:center;justify-content:center;">
+        <div style="background:var(--card);padding:24px;border-radius:12px;max-width:400px;width:90%;text-align:center;">
+          <h3>Modal Title</h3>
+          <p>This is a demo modal window.</p>
+          <button class="btn secondary" id="closeModal">Close</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Avatar Showcase -->
+    <section id="avatars">
+      <h2>Avatars</h2>
+      <div class="avatar-list">
+        <img src="https://i.pravatar.cc/48?img=1" class="avatar" alt="Avatar 1">
+        <img src="https://i.pravatar.cc/48?img=2" class="avatar" alt="Avatar 2">
+        <img src="https://i.pravatar.cc/48?img=3" class="avatar" alt="Avatar 3">
+        <img src="https://i.pravatar.cc/48?img=4" class="avatar" alt="Avatar 4">
+      </div>
+    </section>
+
+    <!-- Forms / Inputs -->
+    <section id="forms">
+      <h2>Form Elements</h2>
+      <form>
+        <label for="username">Username</label>
+        <input type="text" id="username" placeholder="Enter username">
+
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Enter email">
+
+        <label for="message">Message</label>
+        <textarea id="message" placeholder="Enter your message"></textarea>
+
+        <label for="select-example">Select Option</label>
+        <select id="select-example">
+          <option>Option 1</option>
+          <option>Option 2</option>
+          <option>Option 3</option>
+        </select>
+
+        <button type="submit" class="btn primary">Submit</button>
+      </form>
+    </section>
+
+    <!-- Sliders / Range Inputs -->
+    <section id="sliders">
+      <h2>Sliders / Range Inputs</h2>
+      <div class="slider-container">
+        <label for="volume">Volume: <span id="volumeValue">50</span>%</label>
+        <input type="range" id="volume" min="0" max="100" value="50">
+      </div>
+      <div class="slider-container">
+        <label for="brightness">Brightness: <span id="brightnessValue">70</span>%</label>
+        <input type="range" id="brightness" min="0" max="100" value="70">
+      </div>
+    </section>
+
+    <!-- Toast Notifications -->
+    <section id="toasts">
+      <h2>Toast Notifications</h2>
+      <button class="btn secondary" id="toggleToast">Disable Toasts</button>
+      <div class="toast-container">
+        <div class="toast info">Info: New update available</div>
+        <div class="toast success">Success: Feature enabled</div>
+        <div class="toast warning">Warning: Low disk space</div>
+        <div class="toast error">Error: Something went wrong</div>
+      </div>
+    </section>
+
+    <!-- Icon Buttons -->
+    <section id="icons">
+      <h2>Icon Buttons</h2>
+      <div style="display:flex;gap:12px;flex-wrap:wrap;">
+        <button class="btn icon-btn" title="Settings ⚙️">⚙️</button>
+        <button class="btn icon-btn" title="Notifications 🔔">🔔</button>
+        <button class="btn icon-btn" title="Search 🔍">🔍</button>
+        <button class="btn icon-btn disabled" title="Disabled ❌">❌</button>
+      </div>
+    </section>
+
+    <!-- Chips / Tag Lists -->
+    <section id="chips">
+      <h2>Chips / Small Tags</h2>
+      <div style="display:flex;flex-wrap:wrap;gap:6px;">
+        <span class="chip">JavaScript</span>
+        <span class="chip">CSS</span>
+        <span class="chip">HTML</span>
+        <span class="chip">React</span>
+        <span class="chip">Node.js</span>
+      </div>
+    </section>
+
+    <!-- Skeleton Loader -->
+    <section id="skeleton">
+      <h2>Skeleton Loader</h2>
+      <div class="skeleton-card">
+        <div class="skeleton skeleton-title"></div>
+        <div class="skeleton skeleton-text"></div>
+        <div class="skeleton skeleton-text short"></div>
+      </div>
+    </section>
+
+    <!-- Spinner / Loader -->
+    <section id="loader">
+      <h2>Spinner / Loader</h2>
+      <div class="spinner"></div>
+    </section>
+
+    <!-- Animated Tooltips -->
+    <section id="tooltips">
+      <h2>Animated Tooltips</h2>
+      <button class="btn tooltip-btn">Hover me
+        <span class="tooltip">Tooltip with animation!</span>
+      </button>
+      <button class="btn tooltip-btn">Info
+        <span class="tooltip">More info here</span>
+      </button>
+    </section>
+
+    <!-- Badges / Counters -->
+    <section id="badges">
+      <h2>Badges / Counters</h2>
+      <div style="display:flex;gap:12px;align-items:center;">
+        <button class="btn">Messages <span class="badge">5</span></button>
+        <button class="btn">Notifications <span class="badge">12</span></button>
+        <button class="btn">Alerts <span class="badge">99+</span></button>
+      </div>
+    </section>
+
+    <!-- Rating Stars -->
+    <section id="ratings">
+      <h2>Rating Stars</h2>
+      <div class="stars">
+        <span class="star">&#9733;</span>
+        <span class="star">&#9733;</span>
+        <span class="star">&#9733;</span>
+        <span class="star">&#9734;</span>
+        <span class="star">&#9734;</span>
+      </div>
+    </section>
+
+    <!-- Breadcrumb Navigation -->
+    <section id="breadcrumbs">
+      <h2>Breadcrumb Navigation</h2>
+      <nav class="breadcrumb">
+        <a href="#">Home</a> &gt;
+        <a href="#">Dashboard</a> &gt;
+        <span>Settings</span>
+      </nav>
+    </section>
+
+    <!-- Light/Dark Mode Toggle -->
+    <section id="theme-toggle">
+      <h2>Light / Dark Mode Toggle
+        <span class="tag beta-tag" title="This feature is in Beta testing">BETA</span>
+      </h2>
+      <button class="btn primary" id="toggleTheme">Toggle Light/Dark Mode</button>
+    </section>
+
+  </main>
+
+  <footer class="wrap footer">
+    <p>© 2025 MilkDev — CSS Showcase</p>
+  </footer>
+
+  <script src="./script.js"></script>
+
+</body>
+</html>
