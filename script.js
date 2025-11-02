@@ -74,4 +74,50 @@ progressRange.addEventListener('input', () => {
   progressValue.textContent = value;
 });
 
+document.querySelectorAll('.text-wavey').forEach(el => {
+  const text = el.textContent;
+  el.innerHTML = '';
+  [...text].forEach((char, i) => {
+    const span = document.createElement('span');
+    span.textContent = char;
+    span.style.animationDelay = `${i * 0.1}s`;
+    el.appendChild(span);
+  });
 });
+});
+
+// Hide all cards after the first 6
+const allCards = document.querySelectorAll("#cardGrid .card");
+allCards.forEach((card, index) => {
+  if (index >= 6) card.classList.add("hidden");
+});
+
+// Toggle reveal for extra cards
+document.getElementById("toggleCards")?.addEventListener("click", () => {
+  const hiddenCards = document.querySelectorAll("#cardGrid .card.hidden");
+  hiddenCards.forEach(card => card.classList.toggle("show"));
+  const btn = document.getElementById("toggleCards");
+  btn.textContent = btn.textContent === "View More" ? "View Less" : "View More";
+});
+
+// Clickable + image card link destinations
+document.querySelectorAll(".card-btn, .img-card").forEach(card => {
+  card.addEventListener("click", () => {
+    const link = card.getAttribute("data-link");
+    if (link) window.open(link, "_blank"); // Change "_blank" → "_self" to open in same tab
+  });
+});
+
+document.querySelectorAll('.stars').forEach(starContainer => {
+  const rating = parseInt(starContainer.dataset.rating);
+  const max = parseInt(starContainer.dataset.max);
+
+  starContainer.innerHTML = '';
+  for (let i = 1; i <= max; i++) {
+    const star = document.createElement('span');
+    star.classList.add('star');
+    star.innerHTML = i <= rating ? '&#9733;' : '&#9734;';
+    starContainer.appendChild(star);
+  }
+});
+
